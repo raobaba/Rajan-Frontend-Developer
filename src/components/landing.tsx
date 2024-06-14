@@ -1,3 +1,5 @@
+import Tokenomics from "@/components/tokenomics";
+import "@/app/landing.css"
 const columns = [
   {
     images: [
@@ -40,37 +42,58 @@ const miniImgColumns = Array(8)
   }));
 
 const LandingPage = () => (
-  <div className="w-full h-[1292px] gradient-background absolute top-[72.42px] left-[0.46px] gap-0">
-    <div className="relative flex justify-center items-center xl:justify-between">
-      <div className="left-box">
-        <div className="w-60 logo-text-box h6 border-gray-200 rounded-md">
-          <p className="logo-text text-white border-zinc-200 ml-2 border">
-            🎉 New in AI.GEN: Real Time Interaction
-          </p>
+    <div className="w-full gradient-background absolute top-[72.42px] left-[0.46px] gap-0">
+      <div className="relative flex justify-center items-center xl:justify-between">
+        <div className="left-box">
+          <div className="w-60 logo-text-box h6 rounded-md">
+            <p className="logo-text text-white rounded-md ml-2 bg-gradient-to-r from-gray-400 to-gray-400 ">
+              🎉 New in AI.GEN: Real Time Interaction
+            </p>
+          </div>
+          <div className="serum w-full h-[80px]  mt-10 gap-[48px]">
+            <span className="gradient-text">IOTA polygon serum ipsum WAX </span>
+            <span className="gradient-text text-slate-300">
+              terraUSD gala THETA.
+            </span>
+          </div>
+          <div className="crypto w-full h-[65px] text-slate-300 mt-2 gap-[48px]">
+            Chiliz serum TRON dash aave cardano crypto celo. Golem ankr bancor
+            horizen ethereum quant bitcoin.
+          </div>
+          <div className="w-44 h-24 mt-20">
+            <button className="w-full bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 h-14 text-white text-2xl rounded-md">
+              Get Started
+            </button>
+          </div>
         </div>
-        <div className="serum w-full h-[80px]  mt-10 gap-[48px]">
-          <span className="gradient-text">IOTA polygon serum ipsum WAX </span>
-          <span className="gradient-text text-slate-300">
-            terraUSD gala THETA.
-          </span>
-        </div>
-        <div className="crypto w-full h-[65px] text-slate-300 mt-2 gap-[48px]">
-          Chiliz serum TRON dash aave cardano crypto celo. Golem ankr bancor
-          horizen ethereum quant bitcoin.
-        </div>
-        <div className="w-44 h-24 mt-20">
-          <button className="w-full h-14 text-white border text-2xl rounded-md">
-            Get Started
-          </button>
+
+        <div className="right-box absolute top-0 left-0 w-full h-full xl:flex hidden">
+          <div className="flex justify-center items-center w-full h-full">
+            {columns.map((col, index) => (
+              <div
+                key={index}
+                className={`${col.width} h-[630.48px] flex flex-col ${col.justify}`}
+              >
+                {col.images.map((image, idx) => (
+                  <img
+                    key={idx}
+                    src={image.src}
+                    alt=""
+                    className={image.classes}
+                  />
+                ))}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 
-      <div className="right-box absolute top-0 left-0 w-full h-full xl:flex hidden">
-        <div className="flex justify-center items-center w-full h-full">
-          {columns.map((col, index) => (
+      <div className="mini-img-container z-10 w-full mt-44 h-[550px] relative">
+        <div className="w-10/12 h-5/6 flex justify-center gap-3 mt-12 m-auto relative">
+          {miniImgColumns.map((col, index) => (
             <div
               key={index}
-              className={`${col.width} h-[630.48px] flex flex-col ${col.justify}`}
+              className={`w-28 h-full flex flex-col ${col.justify} opacity-50`}
             >
               {col.images.map((image, idx) => (
                 <img
@@ -82,35 +105,20 @@ const LandingPage = () => (
               ))}
             </div>
           ))}
-        </div>
-      </div>
-    </div>
-
-    <div className="mini-img-container z-10 w-full mt-44 h-[550px] relative">
-      <div className="w-10/12 h-5/6 flex justify-center gap-3 mt-12 m-auto relative">
-        {miniImgColumns.map((col, index) => (
-          <div
-            key={index}
-            className={`w-28 h-full flex flex-col ${col.justify} opacity-50`}
-          >
-            {col.images.map((image, idx) => (
-              <img key={idx} src={image.src} alt="" className={image.classes} />
-            ))}
-          </div>
-        ))}
-        <div className="absolute inset-0 flex justify-center items-center z-10">
-          <div className="text-white text-text-combo xl:w-9/12 w-11/12 text-2xl font-bold opacity-90">
-            <span className="create-customize">
-              Create, customize, and publish
-            </span>
-            <span className="your-digital ml-3">
-              your digital persona to life effortlessly.
-            </span>
+          <div className="absolute inset-0 flex justify-center items-center z-10">
+            <div className="text-white text-text-combo xl:w-9/12 w-11/12 text-2xl font-bold opacity-90">
+              <span className="create-customize">
+                Create, customize, and publish
+              </span>
+              <span className="your-digital ml-3">
+                your digital persona to life effortlessly.
+              </span>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+   
 );
 
 export default LandingPage;
