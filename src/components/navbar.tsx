@@ -14,11 +14,13 @@ function Navbar() {
             <p>Tokenomics</p>
           </div>
         </div>
-        <div className="navbar-right flex gap-3 items-right sm:hidden"> 
+        <div className="navbar-right flex gap-3 items-right sm:hidden">
           <div className="flex-grow"></div>
-          <CiMenuFries size={30} className="mt-1" />
+          <div className="bg-gray-600 w-12 h-12 flex items-center justify-center rounded-full">
+            <CiMenuFries size={30} className="text-white"/>
+          </div>
         </div>
-        <div className="navbar-right flex z-10 gap-3  items-center hidden sm:flex"> 
+        <div className="navbar-right flex z-10 gap-3  items-center hidden sm:flex">
           <button className="btn border border-white rounded-md px-4 py-2">
             Whitepaper
           </button>

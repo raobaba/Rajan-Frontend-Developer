@@ -84,6 +84,7 @@
   text-align: left;
 }
 
+/* Base styles */
 .serum {
   font-family: "Outfit", sans-serif;
   font-size: 38px;
@@ -99,7 +100,6 @@
   font-weight: 200;
   line-height: 30px;
   text-align: left;
-  color: #ffffff;
 }
 
 .create-customize {
@@ -118,3 +118,129 @@
   line-height: 64px;
   text-align: center;
 }
+
+/* Responsive styles */
+@media (max-width: 1280px) {
+  .left-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 1200px;
+  }
+
+  .logo-text-box {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .serum {
+    font-size: 34px;
+    line-height: 36px;
+    text-align: center;
+  }
+
+  .crypto {
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+  }
+
+  .text-text-combo {
+    font-size: 42px;
+    line-height: 56px;
+    text-align: center;
+  }
+
+  .w-44 {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .w-44 button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .left-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1200px;
+  }
+  .serum {
+    font-size: 34px;
+    line-height: 36px;
+    text-align: center;
+  }
+
+  .crypto {
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+  }
+
+  .text-text-combo {
+    font-size: 42px;
+    line-height: 56px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .left-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1200px;
+  }
+  .serum {
+    font-size: 30px;
+    line-height: 32px;
+    text-align: center;
+  }
+
+  .crypto {
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    margin-top: 35px;
+  }
+
+  .text-text-combo {
+    font-size: 42px;
+    line-height: 56px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .left-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1200px;
+  }
+  .serum {
+    font-size: 24px;
+    line-height: 26px;
+    text-align: center;
+  }
+
+  .crypto {
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 10px;
+  }
+
+  .text-text-combo {
+    font-size: 42px;
+    line-height: 56px;
+    text-align: center;
+  }
+}
+
