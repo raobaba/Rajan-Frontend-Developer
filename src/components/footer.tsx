@@ -2,7 +2,7 @@ import React from 'react'
 
 function FooterPage() {
   return (
-    <div className="absolute overflow-hidden mt-[-70px] w-full bg-black ">
+    <div className="absolute overflow-hidden w-full bg-black ">
     <div className="">
       <div className=" relative top-40 max-md:top-20 w-full flex items-center justify-center">
         <button className="bg-gradient-to-r from-pink-500 to-violet-500 text-white py-6 px-8 rounded-sm text-xl w-5/6">

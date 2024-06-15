@@ -1,4 +1,3 @@
-import Tokenomics from "@/components/tokenomics";
 import "@/app/landing.css";
 const columns = [
   {
