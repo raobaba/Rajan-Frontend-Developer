@@ -2,17 +2,17 @@ const WorkPage = () => {
   return (
     <div className="mt-[1240px] work-gradient">
       <div className="w-full rounded-lg shadow-lg overflow-hidden">
-        <div className="flex flex-col md:flex-row">
-          <div className="md:w-4/12">
+        <div className="flex flex-col lg:flex-row">
+          <div className="lg:w-4/12">
             <img
               src="./ladyImg.png"
               alt=""
-              className="w-full h-auto md:h-full object-cover"
+              className="w-full h-auto lg:h-full object-cover"
             />
           </div>
 
           {/* Text Section */}
-          <div className="md:w-4/12 p-6 flex flex-col justify-center">
+          <div className="lg:w-4/12 p-6 flex flex-col justify-center">
             <h1 className="text-4xl text-white font-extrabold mb-4">
               How it Works
             </h1>

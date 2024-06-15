@@ -45,27 +45,27 @@ const LandingPage = () => (
   <div className="w-full gradient-background absolute top-[71.42px] gap-0">
     <div className="relative flex justify-center items-center xl:justify-between">
       <div className="left-box">
-        <div className="w-60 text-logo-text h-6 bg-gray-900 text-white rounded-md xl:w-72 xl:h-8">
-          <p className="logo-text ml-2">
+        <div className="w-full text-logo-text h-6 text-white rounded-md ">
+          <p className="logo-text bg-gray-900 rounded-lg ml-2">
             {" "}
             🎉 New in AI.GEN: Real Time Interaction{" "}
           </p>
         </div>
 
-        <div className="serum w-full h-[80px] mt-5 gap-[48px] xl:mt-8 xl:gap-16">
+        <div className="serum w-full h-[80px]">
           <span className="gradient-text">IOTA polygon serum ipsum WAX </span>
           <span className="gradient-text text-neutral-300">
             terraUSD gala THETA.
           </span>
         </div>
 
-        <div className="crypto w-full h-[65px] text-neutral-400 mt-2 gap-[48px] xl:mt-4 xl:gap-16">
+        <div className="crypto w-full h-[65px] text-neutral-400">
           Chiliz serum TRON dash aave cardano crypto celo. Golem ankr bancor
           horizen ethereum quant bitcoin.
         </div>
 
-        <div className="w-44 h-24 mt-20 xl:w-56 xl:h-28 xl:mt-24">
-          <button className="w-full bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 h-14 text-white text-2xl rounded-md xl:h-16 xl:text-3xl">
+        <div className="w-full flex justify-start xl:justify-center h-24 mt-24 xl:w-56 xl:h-28 xl:mt-24">
+          <button className="w-1/2 text-2xl rounded-md xl:h-16 xl:text-3xl bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 h-14 text-white ">
             Get Started
           </button>
         </div>

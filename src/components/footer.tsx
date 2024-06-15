@@ -2,7 +2,7 @@ import React from 'react'
 
 function FooterPage() {
   return (
-    <div className="absolute overflow-hidden w-full bg-black ">
+    <div className="absolute overflow-hidden mt-[-70px] w-full bg-black ">
     <div className="">
       <div className=" relative top-40 max-md:top-20 w-full flex items-center justify-center">
         <button className="bg-gradient-to-r from-pink-500 to-violet-500 text-white py-6 px-8 rounded-sm text-xl w-5/6">
@@ -66,10 +66,10 @@ function FooterPage() {
       <div className="flex justify-between lg:mt-10 max-lg:mt-5 text-xl text-white">
         <p>AI.GEN</p>
         <div className="flex gap-2">
-          <img src="./twitter.png" alt="" />
-          <img src="./linkedin.png" alt="" />
-          <img src="./instagram.png" alt="" />
-          <img src="./youtube.png" alt="" />
+          <img src="./twitter.png" alt="" className='w-6 h-6'/>
+          <img src="./linkedin.png" alt="" className='w-6 h-6'/>
+          <img src="./instagram.png" alt="" className='w-6 h-6'/>
+          <img src="./youtube.png" alt="" className='w-6 h-6'/>
         </div>
       </div>
     </div>

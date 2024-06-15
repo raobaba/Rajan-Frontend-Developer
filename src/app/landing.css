@@ -21,7 +21,7 @@
 }
 
 .logo-text {
-  width: 265px;
+  width: 235px;
   height: 24px;
   gap: 0px;
   font-family: "Outfit", sans-serif;
@@ -35,7 +35,10 @@
   font-family: "Outfit", sans-serif;
   font-size: 38px;
   font-weight: 500;
+
   line-height: 39px;
+  margin-top: 20px;
+  margin-bottom: 10px;
   text-align: left;
   color: #ffffff;
 }
@@ -69,20 +72,15 @@
     width: 90%;
     height: auto;
     margin-top: 5rem; 
-    /* margin-left: 1rem;  */
-    gap: 1rem; 
   }
 
   .left-box .serum {
     margin-top: 1rem;
-    gap: 4rem;
-    /* text-align: center; */
+
   }
 
   .left-box .crypto {
     margin-top: 6rem; 
-    gap: 4rem; 
-    /* text-align: center; */
   }
 }
 
@@ -94,25 +92,21 @@
     width: 90%;
     height: auto;
     margin-top: 8rem; 
-    /* margin-left: 1rem;  */
-    gap: 2rem; 
+    margin-left: 1rem; 
   }
 
   .left-box .serum {
     margin-top: 2rem;
-    gap: 4rem;
     text-align: center;
   }
 
   .left-box .crypto {
     margin-top: 1rem; 
-    gap: 4rem; 
     text-align: center;
   }
   .text-logo-text{
     display: flex;
     justify-content: center;
-    border: 1px solid white;
   }
 }
 
