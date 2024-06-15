@@ -3,6 +3,7 @@ import LandingPage from "@/components/landing";
 import Tokenomics from "@/components/tokenomics";
 import WorkPage from "@/components/works";
 import RoadmapPage from "@/components/roadmap";
+import FooterPage from "@/components/footer"
 export default function Home() {
   return (
     <main>
@@ -11,6 +12,7 @@ export default function Home() {
       <WorkPage />
       <Tokenomics />
       <RoadmapPage />
+      <FooterPage/>
     </main>
   );
 }
