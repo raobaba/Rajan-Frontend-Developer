@@ -1,0 +1,118 @@
+/*Landing Page css*/
+
+.left-box {
+  width: 660px;
+  height: 394.5px;
+  margin-top: 127.58px;
+  margin-left: 175.54px;
+  gap: 64px;
+}
+
+.right-box {
+  width: 633.82px;
+  height: 630.48px;
+  margin-top: -83.45px;
+  margin-left: 20px;
+  position: relative;
+}
+
+.gradient-background {
+  background: linear-gradient(black, rgb(48, 24, 54));
+}
+
+.logo-text {
+  width: 265px;
+  height: 24px;
+  gap: 0px;
+  font-family: "Outfit", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+
+.serum {
+  font-family: "Outfit", sans-serif;
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 39px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.crypto {
+  font-family: "Outfit", sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: left;
+}
+
+.create-customize {
+  font-family: "Outfit", sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 64px;
+  text-align: center;
+  color: rgb(218, 161, 189);
+}
+
+.your-digital {
+  font-family: "Outfit", sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 64px;
+  text-align: center;
+}
+
+@media (max-width: 1280px) {
+  .left-box {
+    width: 90%;
+    height: auto;
+    margin-top: 5rem; 
+    /* margin-left: 1rem;  */
+    gap: 1rem; 
+  }
+
+  .left-box .serum {
+    margin-top: 1rem;
+    gap: 4rem;
+    /* text-align: center; */
+  }
+
+  .left-box .crypto {
+    margin-top: 6rem; 
+    gap: 4rem; 
+    /* text-align: center; */
+  }
+}
+
+
+
+
+@media (max-width: 1020px) {
+  .left-box {
+    width: 90%;
+    height: auto;
+    margin-top: 8rem; 
+    /* margin-left: 1rem;  */
+    gap: 2rem; 
+  }
+
+  .left-box .serum {
+    margin-top: 2rem;
+    gap: 4rem;
+    text-align: center;
+  }
+
+  .left-box .crypto {
+    margin-top: 1rem; 
+    gap: 4rem; 
+    text-align: center;
+  }
+  .text-logo-text{
+    display: flex;
+    justify-content: center;
+    border: 1px solid white;
+  }
+}
+
